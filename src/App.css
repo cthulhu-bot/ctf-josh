@@ -81,5 +81,5 @@ body {
 .body-offline {
   background-image: radial-gradient(120% 600px at 50% 200px, #fcb045, #fd1d1d);
   font-size: 18px;
-  height: 550vh;
+  height: 400vh;
 }
