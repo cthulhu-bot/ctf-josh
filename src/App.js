@@ -12,19 +12,19 @@ const charPoses = {
 }
 
 class App extends Component {
-  state = { online: true }
+  state = { o: true }
 
   componentDidMount() {
     setInterval(() => {
-      this.setState({ online: window.navigator.onLine })
+      this.setState({ o: window.navigator.onLine })
     }, 500)
   }
 
   render() {
-    const { online } = this.state
+    const { o } = this.state
 
-    if (online) {
-      document.body.className = 'body-online'
+    if (o) {
+      document.body.className = 'bon'
       return (
         <div className="container">
           <SplitText
@@ -78,7 +78,7 @@ class App extends Component {
       )
     }
 
-    document.body.className = 'body-offline'
+    document.body.className = 'bof'
     return (
       <div className="container">
         <SplitText
